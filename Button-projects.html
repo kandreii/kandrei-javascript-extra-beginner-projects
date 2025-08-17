@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons</title>
+  </head>
+  <body>
+
+
+    <button id="buttonss" >Start</button>
+    <script>
+      /*add = function (){
+        console.log(2+3);
+      }
+      add();
+      setTimeout(add(), 3000);*/
+
+      /*function runTwice(fun){
+        fun();
+      }
+
+      runTwice(function (){
+        
+        console.log('12b');
+        
+      });
+
+      setTimeout(runTwice(function (){
+        
+        console.log('12b');
+        
+      }), 3000);*/
+    
+      const button = document.getElementById('buttonss');
+      
+      button.addEventListener('click', function (){ 
+        setTimeout(function (){
+          button.textContent = 'finished';}, 1000);
+        
+      });
+
+      
+      
+
+    </script>
+  </body>
+</html>
