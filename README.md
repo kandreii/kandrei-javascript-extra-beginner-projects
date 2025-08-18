@@ -1,1 +1,1 @@
-# kandrei-javascript-extra-beginner-projects
+# kandrei-javascript-beginner-projects
