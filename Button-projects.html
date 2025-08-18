@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Buttons</title>
-  </head>
+    <title id="new-message">App</title>
+  </head> 
   <body>
 
 
-    <button id="buttonss" >Start</button>
+    <button id="buttonss" >Add To Cart</button>
+    <div id="added"></div>
+
+
+    <button id="Add-button">Add</button>
+    <button id="Remove-button">Remove</button>
     <script>
       /*add = function (){
         console.log(2+3);
@@ -19,24 +24,93 @@
       }
 
       runTwice(function (){
-        
         console.log('12b');
-        
       });
 
       setTimeout(runTwice(function (){
-        
         console.log('12b');
-        
       }), 3000);*/
     
-      const button = document.getElementById('buttonss');
+
+
+
+
+      
+      
+      /*const button = document.getElementById('buttonss');
       
       button.addEventListener('click', function (){ 
+        button.textContent = 'Loading';
         setTimeout(function (){
           button.textContent = 'finished';}, 1000);
         
+      });*/
+      
+
+
+
+
+
+
+      /*const button = document.getElementById('buttonss');
+      const Add = document.getElementById('added');
+      const originalAdd = Add.textContent;
+      const originalbutton = button.textContent;
+      let timers;
+      button.addEventListener('click', function(){
+        if (timers){
+          clearTimeout(timers);
+        }
+        Add.textContent = 'Added';
+        timers = setTimeout(function(){
+          Add.textContent = originalAdd;
+          timers = null;
+        }, 1500)
+      });*/
+
+
+
+
+
+
+
+
+      /*
+      const App = document.getElementById('new-message');
+      const Add = document.getElementById('Add-button');
+      const Remove = document.getElementById('Remove-button');
+      const originalApp = App.textContent;
+      let messages = 2;
+
+
+      Add.addEventListener('click', function(){
+        messages += 1;
       });
+
+      Remove.addEventListener('click', function(){
+        messages -= 1;
+      })
+
+      
+        setInterval(function (){
+          App.textContent = `(${messages}) New Messages`
+        }, 1000)
+
+        setInterval(function(){
+          App.textContent = originalApp;
+        }, 3000)*/
+
+
+
+      
+        
+
+
+
+      
+
+
+
 
       
       
