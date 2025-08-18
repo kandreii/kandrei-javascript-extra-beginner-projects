@@ -24,18 +24,22 @@
       }
 
       runTwice(function (){
+        
         console.log('12b');
+        
       });
 
       setTimeout(runTwice(function (){
+        
         console.log('12b');
+        
       }), 3000);*/
     
 
 
 
 
-      
+
       
       /*const button = document.getElementById('buttonss');
       
@@ -58,9 +62,11 @@
       const originalbutton = button.textContent;
       let timers;
       button.addEventListener('click', function(){
+        
         if (timers){
           clearTimeout(timers);
         }
+
         Add.textContent = 'Added';
         timers = setTimeout(function(){
           Add.textContent = originalAdd;
@@ -75,8 +81,8 @@
 
 
 
-      /*
-      const App = document.getElementById('new-message');
+      
+      /*const App = document.getElementById('new-message');
       const Add = document.getElementById('Add-button');
       const Remove = document.getElementById('Remove-button');
       const originalApp = App.textContent;
@@ -89,16 +95,30 @@
 
       Remove.addEventListener('click', function(){
         messages -= 1;
+        updateMessage();
       })
 
       
-        setInterval(function (){
+      
+      function updateMessage (){
+        if (messages === 0){
+          App.textContent = originalApp;
+        }else if (messages > 0){
           App.textContent = `(${messages}) New Messages`
-        }, 1000)
+        }
+      }
 
+      
+        setInterval(function(){
+          updateMessage();
+        }, 1000);
         setInterval(function(){
           App.textContent = originalApp;
-        }, 3000)*/
+
+        }, 2000)
+        */
+
+        
 
 
 
